@@ -4,3 +4,9 @@ body{
     h1{
         background-color: white;
     }
+    h3{
+        background-color: cyan;
+    }
+    p{
+        background-color: blueviolet;
+    }
