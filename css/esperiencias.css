@@ -7,16 +7,16 @@ body{
     padding: 30px;
     content:normal;
 }
-    h1{
-        background-color: #284138;
-    }
-    h3{
-        background-color: #d1abd3;
-    }
-    p{
-        background-color: #d8c5c0;
-    }
-    /* Estilos para pantallas pequeñas (dispositivos móviles) */
+h1{
+    background-color: #284138;
+}
+h3{
+    background-color: #d1abd3;
+}
+p{
+    background-color: #d8c5c0;
+}
+/* Estilos para pantallas pequeñas (dispositivos móviles) */
 @media (max-width: 767px) {
     
 }
