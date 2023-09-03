@@ -1,5 +1,9 @@
+/* aquí agregué directamente la regla de google fonts* agregando aca con @import es lo "mismo" que poniendo en el html con link*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Ubuntu&display=swap');
 *{
     background-color: #e0e0c8;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 body{
     border:black;
@@ -9,6 +13,7 @@ body{
 }
     h1{
         background-color: #284138;
+        color: #d8c5c0;
     }
     h3{
         background-color: #d1abd3;
