@@ -53,7 +53,7 @@ Combinaciones de colores:
 Combination 1
 
 .color1 {color: #071106;}
-.color2 {color: #284138;}
+.color2 {color: #284138;} //verde opaco
 .color3 {color: #d1abd3;}
 .color4 {color: #d8c5c0;}  //tambien use en el css general// paco
 .color5 {color: #e0e0c8;}//use este color para experiencias// Paco
@@ -75,3 +75,10 @@ https://fonts.google.com/specimen/Ubuntu
 Fuente 2
 
 https://fonts.google.com/specimen/Didact+Gothic?query=gothic
+
+
+// aca anoto las cinco web de modelos
+SpaceX https://www.spacex.com/
+Virgin Galactic https://www.virgingalactic.com/
+Blue Origin  https://www.blueorigin.com/
+Axiom Space  https://www.axiomspace.com/
