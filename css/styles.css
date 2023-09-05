@@ -1,27 +1,126 @@
 /* aquí agregué directamente la regla de google fonts* agregando aca con @import es lo "mismo" que poniendo en el html con link*/
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Ubuntu&display=swap');
+/* aquí agregué los estolos generales para todos los html, siempre y cuando esteen vinculados a este style.css,  tome estos datos de lo que elegimos, pero hay otras opciones de color y podemos cambiarlo, este que puse es de modelo*/
 *{
     background-color: #e0e0c8;
     font-family: 'Didact Gothic', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
+/*esta parte abarca de manera generica a todos los html: index.html, quienessomos.html, contacto.html, experiencias.html,*/
 body{
     border:black;
     margin:30px;
     padding: 30px;
     content:normal;
 }
-    h1{
-        background-color: #284138;
-        color: #d8c5c0;
+/*esta parte abarca de manera generica a todos los html: index.html, quienessomos.html, contacto.html, experiencias.html,*/
+    h1, h2, h3{
+        background-color: transparent;
+        color:#284138;
     }
-    h3{
-        background-color: #d1abd3;
-    }
+    /*esta parte abarca de manera generica a todos los html: index.html, quienessomos.html, contacto.html, experiencias.html,*/
     p{
-        background-color: #d8c5c0;
+        background-color: transparent;
+        color:#284138;
     }
-    /* Estilos para pantallas pequeñas (dispositivos móviles) */
+
+/*Aqui en adelante son los estilos particulares que agregre a experiencias, me falta pulirlo y mejorarlo con lo ultima clase*/
+   /* Estilo para el banner */
+   .banner {
+    width: 100%; /* Ancho del banner al 100% del ancho de la ventana */
+    overflow: hidden; /* Oculta el contenido que se desborde del banner */
+    position: relative; /* Posición relativa para elementos internos */
+}
+
+/* Estilo para las imágenes */
+.banner img {
+    width: 100%; /* Ancho de las imágenes al 100% del banner */
+    display: none; /* Oculta las imágenes por defecto */
+}
+/* Estilos para la sección de resumen del espacio */
+#resumen-espacio {
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior entre secciones */
+}
+
+#resumen-espacio h2 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    color: #333; /* Color del texto del título */
+}
+
+#resumen-espacio h3 {
+    font-size: 20px; /* Tamaño de fuente para los subtítulos */
+    color: #555; /* Color del texto de los subtítulos */
+}
+
+#resumen-espacio p {
+    font-size: 16px; /* Tamaño de fuente para el texto normal */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #666; /* Color del texto normal */
+}
+
+#resumen-espacio ol {
+    list-style-type: decimal; /* Numeración en la lista ordenada */
+    font-size: 16px; /* Tamaño de fuente para la lista */
+    color: #333; /* Color del texto de la lista */
+    margin-left: 20px; /* Sangría izquierda para la lista */
+}
+
+#resumen-espacio li {
+    margin-bottom: 10px; /* Espacio inferior entre elementos de la lista */
+}
+
+body{
+    border:black;
+    margin:30px;
+    padding: 30px;
+    content:normal;
+  
+}
+
+
+/* para el menú */
+.menu {
+    background-color: #d8c5c0; /* Cambia el color de fondo del menú */
+    /* Cambia el color de fondo del menú */
+    overflow: hidden;
+}
+
+.menu h1 {
+    color: #071106; /* Cambia el color del texto del título */
+    margin: 0;
+    padding: 10px;
+    float: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block; /* Cambia a elementos en línea */
+    margin-right: 10px; /* Espaciado entre elementos del menú */
+}
+
+.menu a {
+    color: #071106; /* Cambia el color del texto del enlace */
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+}
+
+/* Cambia el color de fondo del menú al pasar el cursor */
+.menu a:hover {
+    background-color: #d1abd3;;
+}
+
+
+/* Estilos para pantallas pequeñas (dispositivos móviles) */
 @media (max-width: 767px) {
     
 }
