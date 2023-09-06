@@ -1,11 +1,10 @@
 let currentImageIndex = 0
-const images = document.querySelectorAll('.banner img')
+const images = document.querySelectorAll('.banner .banner-img')
 
 function changeImage() {
-  images[currentImageIndex].style.display = 'none'
+  images[currentImageIndex].classList.remove('active')
   currentImageIndex = (currentImageIndex + 1) % images.length
-  images[currentImageIndex].style.display = 'block'
+  images[currentImageIndex].classList.add('active')
 }
 
-// Cambia la imagen cada 3 segundos (puedes ajustar el tiempo)
 setInterval(changeImage, 2000)

@@ -1,131 +1,163 @@
-/* aquí agregué directamente la regla de google fonts* agregando aca con @import es lo "mismo" que poniendo en el html con link*/
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Ubuntu&display=swap');
-/* aquí agregué los estolos generales para todos los html, siempre y cuando esteen vinculados a este style.css,  tome estos datos de lo que elegimos, pero hay otras opciones de color y podemos cambiarlo, este que puse es de modelo*/
-*{
-    background-color: #e0e0c8;
-    font-family: 'Didact Gothic', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-}
-/*esta parte abarca de manera generica a todos los html: index.html, quienessomos.html, contacto.html, experiencias.html,*/
-body{
-    border:black;
-    margin:30px;
-    padding: 30px;
-    content:normal;
-}
-/*esta parte abarca de manera generica a todos los html: index.html, quienessomos.html, contacto.html, experiencias.html,*/
-    h1, h2, h3{
-        background-color: transparent;
-        color:#284138;
+    /* Inicio de Estilos generales */
+    @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Ubuntu&display=swap');
+/* Estilos generales */
+    * {
+        background-color: #e0e0c8;
+        font-family: 'Didact Gothic', 'Ubuntu', sans-serif;
+        border: 10px;
+        margin: 10;
+        padding: 10px;
+        content: normal;
     }
-    /*esta parte abarca de manera generica a todos los html: index.html, quienessomos.html, contacto.html, experiencias.html,*/
-    p{
-        background-color: transparent;
-        color:#284138;
+    /* Estilos generales */
+.cabecera{
+    width: 90%;
+    margin: 2px auto;
+    border: 4px solid lightslategray;
+    }
+    /* Fin de Estilos generales */
+    /* Estilos para el menú */
+    .menu {
+        background-color: #d8c5c0;
+        overflow: hidden;
     }
 
-/*Aqui en adelante son los estilos particulares que agregre a experiencias, me falta pulirlo y mejorarlo con lo ultima clase*/
-   /* Estilo para el banner */
-   .banner {
-    width: 100%; /* Ancho del banner al 100% del ancho de la ventana */
-    overflow: hidden; /* Oculta el contenido que se desborde del banner */
-    position: relative; /* Posición relativa para elementos internos */
-}
+    .menu h1 {
+        color: #071106;
+        margin: 0;
+        padding: 10px;
+        float: left;
+    }
 
-/* Estilo para las imágenes */
-.banner img {
-    width: 100%; /* Ancho de las imágenes al 100% del banner */
-    display: none; /* Oculta las imágenes por defecto */
-}
-/* Estilos para la sección de resumen del espacio */
-#resumen-espacio {
-    background-color: #f0f0f0; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde con color gris claro */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-bottom: 20px; /* Espacio inferior entre secciones */
-}
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-#resumen-espacio h2 {
-    font-size: 24px; /* Tamaño de fuente para el título */
-    color: #333; /* Color del texto del título */
-}
+    .menu li {
+        display: inline-block;
+        margin-right: 10px;
+    }
 
-#resumen-espacio h3 {
-    font-size: 20px; /* Tamaño de fuente para los subtítulos */
-    color: #555; /* Color del texto de los subtítulos */
-}
+    .menu a {
+        color: #071106;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 22px;
+    }
 
-#resumen-espacio p {
-    font-size: 16px; /* Tamaño de fuente para el texto normal */
-    line-height: 1.5; /* Espaciado entre líneas */
-    color: #666; /* Color del texto normal */
-}
-
-#resumen-espacio ol {
-    list-style-type: decimal; /* Numeración en la lista ordenada */
-    font-size: 16px; /* Tamaño de fuente para la lista */
-    color: #333; /* Color del texto de la lista */
-    margin-left: 20px; /* Sangría izquierda para la lista */
-}
-
-#resumen-espacio li {
-    margin-bottom: 10px; /* Espacio inferior entre elementos de la lista */
-}
-
-body{
-    border:black;
-    margin:30px;
-    padding: 30px;
-    content:normal;
+    .menu a:hover {
+        background-color: #d1abd3;
+    }
+    .clearfix{
+        clear: both;
+        
+    }
+    #content{
+        float: left;
+        width: calc(80% - 80px);
+        min-height: 500px;
+        background-color: violet;
+        padding: 40px;
+    }
+    .article{
+      color: black;
+      font-size: 2em;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid white;
+    }
+    .article h2{
+        font-size: 25px;
+    }
+    .article:first-child{
+        padding-top: 10px;
+        border-top: 1px solid white;
+    
+    }
+    aside{
+        float: left;
+        width: calc(20% - 20px);
+        background-color: #d1abd3;
+        min-height: 1180px;
+        padding: 10px;
+    }
+    /* CSS general para tu barra de búsqueda */
+    .barra-busqueda {
+        /* Estilos generales de la barra de búsqueda */
+        width: 30px; /* Ajusta el ancho a tu preferencia */
+        height: 20px; /* Ajusta la altura a tu preferencia */
+        font-size: 16px; /* Tamaño de fuente */
+    }
+    
   
+/*estos son las media query*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+}
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: red;
+    }
+}
+@media only screen and (min-width: 760px) {
+    body {
+        background-color: #284138;
+    }
 }
 
-
-/* para el menú */
-.menu {
-    background-color: #d8c5c0; /* Cambia el color de fondo del menú */
-    /* Cambia el color de fondo del menú */
+ /* Inicio de Estilos para el banner (carrusel de imágenes) */
+ .banner {
+    width: 100%;
+    height: 300px;
     overflow: hidden;
+    position: relative;
 }
 
-.menu h1 {
-    color: #071106; /* Cambia el color del texto del título */
-    margin: 0;
-    padding: 10px;
-    float: left;
+.banner .banner-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
 }
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
+.banner .banner-img.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+}
+/* Fín de Estilos para el banner (carrusel de imágenes) */
+footer {
+    background-color: #3f5b87; /* Cambia el color de fondo según tus preferencias */
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
     padding: 0;
 }
 
-.menu li {
-    display: inline-block; /* Cambia a elementos en línea */
-    margin-right: 10px; /* Espaciado entre elementos del menú */
+footer li {
+    display: inline;
+    margin: 0 10px; /* Añade margen entre los iconos de redes sociales */
 }
 
-.menu a {
-    color: #071106; /* Cambia el color del texto del enlace */
+footer a {
     text-decoration: none;
-    padding: 10px;
-    font-size: 22px;
+    color: #333; /* Cambia el color del texto según tus preferencias */
 }
 
-/* Cambia el color de fondo del menú al pasar el cursor */
-.menu a:hover {
-    background-color: #d1abd3;;
-}
-
-
-/* Estilos para pantallas pequeñas (dispositivos móviles) */
-@media (max-width: 767px) {
-    
-}
-
-/* Estilos para pantallas medianas y grandes (tabletas y escritorios) */
-@media (min-width: 768px) {
-    
+footer a:hover {
+    color: royalblue; /* Cambia el color al pasar el mouse sobre los enlaces */
 }
