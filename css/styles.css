@@ -75,10 +75,24 @@
     .article:first-child{
         padding-top: 10px;
         border-top: 1px solid white;
-    
     }
+    /* inicio del css grid*/
+    .probando{
+        display: grid;
+        grid-template-areas: "aside";
+        grid-template-columns: 200px;
+        grid: area 100px;;
+        color:red;
+    }
+    .formulario{
+        background-color: yellow;
+        padding: 10px;
+        color: aqua;
+        border: 2px dotted white
+    }
+    /* fin del css grid*/
     aside{
-        float: left;
+                float: left;
         width: calc(20% - 20px);
         background-color: #d1abd3;
         min-height: 1180px;
