@@ -84,12 +84,7 @@
         grid: area 100px;;
         color:red;
     }
-    .formulario{
-        background-color: yellow;
-        padding: 10px;
-        color: aqua;
-        border: 2px dotted white
-    }
+   
     /* fin del css grid*/
     aside{
                 float: left;
@@ -175,3 +170,22 @@ footer a {
 footer a:hover {
     color: royalblue; /* Cambia el color al pasar el mouse sobre los enlaces */
 }
+
+
+/* inicio Códigos caro */
+.probando{
+    display: grid;
+    grid-template-areas: "aside";
+    grid-template-columns: 200px;
+    grid: area 100px;;
+    color:red;
+}
+.formulario{
+    background-color:#284138;
+    font-size: 10px;
+    padding: 10px;
+    color: aqua;
+    border: 2px dotted white
+}
+
+/* Fin Códigos caro */

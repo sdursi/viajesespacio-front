@@ -33,12 +33,17 @@
 </nav>
     </header>
         <main>
-        <section>
-            <h1>Imperdibles experiencias de volar al mas alla de lo visible!!</h1>
-            <h3>podes contactarte con nosotros, en breve estaremos subiendo el formulario de contacto</h3>
+                <!--Inicio del main-->
+<!--articulos article-->
+<div class="clearfix"></div>
+<section id="content">
+<article class="article">
+    <h1>Imperdibles experiencias de volar al mas alla de lo visible!!</h1>
+<p>Contactate con nosotros  <img src="Images/mensaje.gif" alt="correo" width="50" height="50"></p>
+</article>
             <!-- Formulario de clase 04 -->
-            <h2>Formulario de registro</h2>
-            <form action="show_data.html" target="_blank">
+            <h2>Formulario de registro</h2>      
+              <form action="show_data.html" target="_blank">
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="firstname">Nombre:</label>
@@ -53,16 +58,48 @@
                 <br><br>
                 <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label>
                 <input type="date" name="Birthdate">
-                <p>Género (Radio) 
+                <p>Género 
                     <input type="radio" name="gender" value="hombre" checked>hombre
                     <input type="radio" name="gender" value="Mujer">Mujer 
                     <input type="radio" name="gender" value="Otro"> Otro 
-                </p>
+                    </p>
+                    <hr>
             </fieldset>    
             </form>
-            <hr>
+<p>Dejanos tus comentarios debajo, nos ayuda a mejorar</p>
+            <textarea name="comentario" rows="10" cols="40">Escribe tu consulta</textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <button type="reset">Borrar</button>
             <p>Nuestra misión es brindarte la mejor experiencia en el viaje al espacio</p>
         </section>
+        <!--Aquí van la barra lateral y las reseñas o citas  aside-->
+       <aside>
+        <!--Inicio del aside o barra lateral-->
+           <h2>Barra lateral</h2>
+<form class="formulario">
+   <input type="text" class="barra-busqueda">
+   <input type="submit" value="Buscar">
+   <article class="article">
+    <h1>Cuentanos cuales serían tus preferencias de partida<img src="Images/cohete.gif" alt="cohete" width="50" height="50"></h1>
+    Seleccione turno:
+    <select name="turno">
+        <option>Mañana</option>
+        <option>Tarde</option>
+        <option>Vespertino</option>
+    </select>
+    </article>
+</form>
+</aside>
+
+<div class="clearfix"></div>
+
+    <!-- Mapa -->
+    <h2>Mapa</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103903.01222291228!2d-57.34264881116927!3d-35.529760477370445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9598c70de358da67%3A0x2fa3fe14b3a2a3e6!2sCentro%20Espacial%20Punta%20Indio%20-%20Sector%20L!5e0!3m2!1ses-419!2sar!4v1694466805967!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+      
+
+<!--Fín del main-->
     </main>
 <!--Pie de página o footer-->
 <footer>
