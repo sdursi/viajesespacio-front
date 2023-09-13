@@ -1,6 +1,5 @@
     /* Inicio de Estilos generales */
     @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Ubuntu&display=swap');
-/* Estilos generales */
     * {
         background-color: #e0e0c8;
         font-family: 'Didact Gothic', 'Ubuntu', sans-serif;
@@ -15,7 +14,7 @@
     margin: 2px auto;
     border: 4px solid lightslategray;
     }
-    /* Fin de Estilos generales */
+   /* Estilos generales */
     /* Estilos para el menú */
     .menu {
         background-color: #d8c5c0;
@@ -76,15 +75,7 @@
         padding-top: 10px;
         border-top: 1px solid white;
     }
-    /* inicio del css grid*/
-    .probando{
-        display: grid;
-        grid-template-areas: "aside";
-        grid-template-columns: 200px;
-        grid: area 100px;;
-        color:red;
-    }
-   
+
     /* fin del css grid*/
     aside{
                 float: left;
@@ -93,15 +84,15 @@
         min-height: 1180px;
         padding: 10px;
     }
-    /* CSS general para tu barra de búsqueda */
+    /* CSS general para la barra de búsqueda */
     .barra-busqueda {
-        /* Estilos generales de la barra de búsqueda */
-        width: 30px; /* Ajusta el ancho a tu preferencia */
-        height: 20px; /* Ajusta la altura a tu preferencia */
-        font-size: 16px; /* Tamaño de fuente */
+        
+        width: 30px; 
+        height: 20px; 
+        font-size: 16px; 
     }
     
-  
+  /* Estilos generales */
 /*estos son las media query*/
 
 @media only screen and (max-width: 600px) {
@@ -119,7 +110,52 @@
         background-color: #284138;
     }
 }
+/* Estilos generales */
+footer {
+    background-color: #3f5b87;
+    padding: 20px;
+    text-align: center;
+}
 
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px; 
+}
+
+footer a {
+    text-decoration: none;
+    color: #333; 
+}
+
+footer a:hover {
+    color: royalblue; 
+}
+/*fin del código general*/
+
+
+/* inicio Códigos caro */
+.probando{
+    display: grid;
+    grid-template-areas: "aside";
+    grid-template-columns: 200px;
+    grid: area 100px;;
+    color:red;
+}
+.formulario{
+    background-color:#284138;
+    font-size: 10px;
+    padding: 10px;
+    color: aqua;
+    border: 2px dotted white
+}
+
+/* Fin Códigos caro */
+/*Inicio del código del  experiencias [Juan]*/
  /* Inicio de Estilos para el banner (carrusel de imágenes) */
  .banner {
     width: 100%;
@@ -146,46 +182,4 @@
     -o-transition: opacity 0.5s ease-in-out;
 }
 /* Fín de Estilos para el banner (carrusel de imágenes) */
-footer {
-    background-color: #3f5b87; /* Cambia el color de fondo según tus preferencias */
-    padding: 20px;
-    text-align: center;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    display: inline;
-    margin: 0 10px; /* Añade margen entre los iconos de redes sociales */
-}
-
-footer a {
-    text-decoration: none;
-    color: #333; /* Cambia el color del texto según tus preferencias */
-}
-
-footer a:hover {
-    color: royalblue; /* Cambia el color al pasar el mouse sobre los enlaces */
-}
-
-
-/* inicio Códigos caro */
-.probando{
-    display: grid;
-    grid-template-areas: "aside";
-    grid-template-columns: 200px;
-    grid: area 100px;;
-    color:red;
-}
-.formulario{
-    background-color:#284138;
-    font-size: 10px;
-    padding: 10px;
-    color: aqua;
-    border: 2px dotted white
-}
-
-/* Fin Códigos caro */
+/*Fin del código del  experiencias [Juan]*/
