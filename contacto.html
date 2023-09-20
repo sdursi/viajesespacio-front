@@ -46,6 +46,7 @@
               <form action="show_data.html" target="_blank">
             <fieldset>
                 <legend>Datos personales</legend>
+                <form id="myForm">
                 <label for="firstname">Nombre:</label>
                 <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aquí...">
                 <label for="lastname">Apellido</label>
@@ -63,8 +64,13 @@
                     <input type="radio" name="gender" value="Mujer">Mujer 
                     <input type="radio" name="gender" value="Otro"> Otro 
                     </p>
+                    <label for="email">Correo electronico:</label>
+                    <input type="email" id="email" name="email" required> 
+                    <input type="submit" value="Enviar">
+                    <button type="reset">Borrar</button>
                     <hr>
             </fieldset>    
+        </form>
             </form>
 <p>Dejanos tus comentarios debajo, nos ayuda a mejorar</p>
             <textarea name="comentario" rows="10" cols="40">Escribe tu consulta</textarea>
@@ -81,6 +87,7 @@
    <input type="text" class="barra-busqueda">
    <input type="submit" value="Buscar">
    <article class="article">
+    <img src="Images/giphy.gif"alt="lluvia" width="150" height="150">
     <h1>Cuentanos cuales serían tus preferencias de partida<img src="Images/cohete.gif" alt="cohete" width="50" height="50"></h1>
     Seleccione turno:
     <select name="turno">
@@ -118,5 +125,7 @@
 <!--Fín  del footer-->
 </footer>
 </div>
+<button onclick="showAlert()">Haz click en mi</button>
+<script src="contacto.js"></script>
 </body>
 </html>
