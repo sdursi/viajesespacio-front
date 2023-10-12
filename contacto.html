@@ -43,40 +43,23 @@
 </article>
             <!-- Formulario de clase 04 -->
             <h2>Formulario de registro</h2>      
-              <form action="show_data.html" target="_blank">
+              <form action="show_data.html" target="_blank" name="formulario" id="formualrio">
             <fieldset>
                 <legend>Datos personales</legend>
-                <form id="myForm">
-                <label for="firstname">Nombre:</label>
-                <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aquí...">
-                <label for="lastname">Apellido</label>
-                <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aquí...">
-                <br><br>
-                <label for="zipcode">Código Postal:</label>
-                <input type="text" name="zipcode" placeholder="Ingrese su código postal aquí...">
-                <label for="telefono">Telefono:</label>
-                <input type="tel" name="telefono" placeholder="Ingrese su telefono aquí...">
-                <br><br>
-                <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label>
-                <input type="date" name="Birthdate">
-                <p>Género 
-                    <input type="radio" name="gender" value="hombre" checked>hombre
-                    <input type="radio" name="gender" value="Mujer">Mujer 
-                    <input type="radio" name="gender" value="Otro"> Otro 
-                    </p>
-                    <label for="email">Correo electronico:</label>
-                    <input type="email" id="email" name="email" required> 
-                    <input type="submit" value="Enviar">
-                    <button type="reset">Borrar</button>
-                    <hr>
-            </fieldset>    
-        </form>
-            </form>
-<p>Dejanos tus comentarios debajo, nos ayuda a mejorar</p>
-            <textarea name="comentario" rows="10" cols="40">Escribe tu consulta</textarea>
-            <br><br>
-            <input type="submit" value="Enviar">
-            <button type="reset">Borrar</button>
+                <p><em>Nombre:</em> <input type="text" name="nombre" placeholder="johnny" id="nombre"></p>
+                <p><em>Apellido:</em> <input type="text" name="apellido" placeholder="deep" id="apellido"></p>
+                <p><em>Teléfono:</em> <input type="number" name="numero" placeholder="3434555555" id="numero">
+                </p>
+                <p><em>Fecha de Nacimiento:</em> <input type="date" name="fecha" id="fecha"></p>
+                <p><em>Correo:</em><input type="email" name="mail" placeholder="nnnnnn@nnn.nn" id="mail"></p>
+                <!-- Grupo: Terminos y Condiciones -->
+                <div>
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <p><em>Acepto los Términos y Condiciones</em></p>
+                </div>
+                <br>
+                <input type="submit" value="Registred">
+
             <p>Nuestra misión es brindarte la mejor experiencia en el viaje al espacio</p>
         </section>
         <!--Aquí van la barra lateral y las reseñas o citas  aside-->
@@ -95,6 +78,18 @@
         <option>Tarde</option>
         <option>Vespertino</option>
     </select>
+    <section class="widget widget_blog_subscription">
+        <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
+            <p>Subscribe newsletter.</p>
+            <p>
+                <input type="text" name="email" style="width: 20%; padding: 1px 2px"
+                    placeholder="Enter your email address" value="" id="subscribe-field">
+            </p>
+            <p>
+                <input type="submit" value="Registred!">
+            </p>
+        </form>
+    </section>
     </article>
 </form>
 </aside>
