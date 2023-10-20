@@ -1,127 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viajes al espacio 2023</title>
-    <!-- Icono donde está el HTTPS -->
-    <link rel="icon" href="./Images/cohete.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
-    <!-- Enlace al archivo CSS -->    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Enlace al fontawesome -->
-    <script src="https://kit.fontawesome.com/e5f77268b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilosSeba.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/077e49a6a4.js" crossorigin="anonymous"></script>
+    <title>moonies - Viajes al espacio</title>
 </head>
+
 <body>
-    <div class="cabecera">
-    <!--Titulo dentro del header-->
-    <header>
-        <!--Inicio del header-->
-<h1>Bienvenidos a esta gran aventura de los viajes al espacio</h1>
-
-    
-<!--Barra de navegación nav-->
-<nav class="menu">
-<!--Inicio de la barra de navegación-->
-    <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-        <li><a href="./quienessomos.html">Quienes somos</a></li>
-        <li><a href="./experiencias.html">Experiencias</a></li>
-    </ul>
-<!--Fin de la barra de navegación-->
-</nav>
-    </header>
-        <main>
-                <!--Inicio del main-->
-<!--articulos article-->
-<div class="clearfix"></div>
-<section id="content">
-<article class="article">
-    <h1>Imperdibles experiencias de volar al mas alla de lo visible!!</h1>
-<p>Contactate con nosotros  <img src="Images/mensaje.gif" alt="correo" width="50" height="50"></p>
-</article>
-            <!-- Formulario de clase 04 -->
-            <h2>Formulario de registro</h2>      
-              <form action="show_data.html" target="_blank" name="formulario" id="formualrio">
-            <fieldset>
-                <legend>Datos personales</legend>
-                <p><em>Nombre:</em> <input type="text" name="nombre" placeholder="johnny" id="nombre"></p>
-                <p><em>Apellido:</em> <input type="text" name="apellido" placeholder="deep" id="apellido"></p>
-                <p><em>Teléfono:</em> <input type="number" name="numero" placeholder="3434555555" id="numero">
-                </p>
-                <p><em>Fecha de Nacimiento:</em> <input type="date" name="fecha" id="fecha"></p>
-                <p><em>Correo:</em><input type="email" name="mail" placeholder="nnnnnn@nnn.nn" id="mail"></p>
-                <!-- Grupo: Terminos y Condiciones -->
-                <div>
-                    <input type="checkbox" name="terminos" id="terminos">
-                    <p><em>Acepto los Términos y Condiciones</em></p>
+    <div class="contenedor">
+        
+        <header class="encabezado">
+                    <!--Inicio del header-->
+            <!-- <div class="headerflex">
+                <div class="caja caja1">
+                    
                 </div>
-                <br>
-                <input type="submit" value="Registred">
+                <div class="caja caja2"><h1>Probando</h1></div>
+            </div> -->
 
-            <p>Nuestra misión es brindarte la mejor experiencia en el viaje al espacio</p>
-        </section>
-        <!--Aquí van la barra lateral y las reseñas o citas  aside-->
-       <aside>
-        <!--Inicio del aside o barra lateral-->
-           <h2>Barra lateral</h2>
-<form class="formulario">
-   <input type="text" class="barra-busqueda">
-   <input type="submit" value="Buscar">
-   <article class="article">
-    <img src="Images/giphy.gif"alt="lluvia" width="150" height="150">
-    <h1>Cuentanos cuales serían tus preferencias de partida<img src="Images/cohete.gif" alt="cohete" width="50" height="50"></h1>
-    Seleccione turno:
-    <select name="turno">
-        <option>Mañana</option>
-        <option>Tarde</option>
-        <option>Vespertino</option>
-    </select>
-    <section class="widget widget_blog_subscription">
-        <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
-            <p>Subscribe newsletter.</p>
-            <p>
-                <input type="text" name="email" style="width: 20%; padding: 1px 2px"
-                    placeholder="Enter your email address" value="" id="subscribe-field">
-            </p>
-            <p>
-                <input type="submit" value="Registred!">
-            </p>
-        </form>
-    </section>
-    </article>
-</form>
-</aside>
 
-<div class="clearfix"></div>
+            <div class="flex-parent-element">
+                <div class="flex-child-element primero">
+                        <i class="fa-solid fa-rocket fa-lg"></i></a>
+                </div>
+                <div class="flex-child-element segundo">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./quienessomos.html">Quienes somos</a></li>
+                    <li><a href="./experiencias.html">Experiencias</a></li>
+                </div>
+              </div>
 
-    <!-- Mapa -->
-    <h2>Mapa</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103903.01222291228!2d-57.34264881116927!3d-35.529760477370445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9598c70de358da67%3A0x2fa3fe14b3a2a3e6!2sCentro%20Espacial%20Punta%20Indio%20-%20Sector%20L!5e0!3m2!1ses-419!2sar!4v1694466805967!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+           
+        </header>
+
+
+        
+        <main class="contenido">
+
+            <div class="carrusel">
+                <h1>Imperdibles experiencias de volar al mas alla de lo visible!!</h1>
+                <form action="submit"></form>
+            </div>
+
+            <div class="widget">
       
+             
+                <p>Contactate con nosotros  <img src="Images/mensaje.gif" alt="correo" width="50" height="50"></p>
+                <i class="em em-point_down" aria-role="presentation" aria-label="WHITE DOWN POINTING BACKHAND INDEX"></i>
+                <form action="submit"></form>
+            </div>
 
-<!--Fín del main-->
-    </main>
-</div>
-<!--Pie de página o footer-->
-<footer>
-<!--Inicio del footer-->
-<!-- Enlaces a redes sociales con descripciones alt -->
-<a href="https://www.facebook.com" target="_blank" title="Facebook">
-<i class="fab fa-facebook" aria-hidden="true"></i>
-</a>
-<a href="https://www.twitter.com" target="_blank" title="Twitter">
-<i class="fab fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="https://www.instagram.com" target="_blank" title="Instagram">
-<i class="fab fa-instagram" aria-hidden="true"></i>
-</a>
-<p>&copy; 2023 Derechos Reservados</p>
-<!--Fín  del footer-->
-</footer>
+            <div>
+                <h1>Viajes al espacio</h1><img src="Images/cohete.gif" alt="correo" width="50" height="50"></p>
+                
+                <h1>Bienvenidos a esta gran aventura de los viajes al espacio</h1>
+                <p>Dejanos tus datos, y nos contactaremos</p> 
+            </div>
+              <!-- Formulario de clase 04 -->
+              <h2>Formulario de registro</h2>  
+              <div class="contenedor-formulario">   
+                <form action="" class= "formulario" name="formulario" id="formualrio" method="">
+                  <div>
+                      <legend>Datos personales</legend>
+                    <br>
+                      <div class="input-group">
+                  <label class="label"name="nombre">Nombre: </label>  <br>
+                  <input type="text" name="nombre" placeholder="johnny" id="nombre"></p>
+              </div>
+              <br>
+              <div class="input-group">
+                  <label class="label"  for="apellido">Apellido: </label><br>
+                  <input type="text" name="apellido" placeholder="deep" id="apellido"></p>
+              </div>
+              <br>
+              <div class="input-group">
+                  <label class="label"  for="numero">Telefono: </label><br>
+                  <input type="number" name="numero" placeholder="3434555555" id="numero"></p>
+              </div>
+              <br>
+              <div class="input-group">
+                  <label class="label" for="email">Correo: </label><br>
+                  <input type="email" name="email"  id="email"></p>
+              </div>
+              <br>
 
+                  <!-- Grupo: Terminos y Condiciones -->
+                  <div>
+                      <input class="checkbox" type="checkbox" name="terminos" id="terminos" value="true">
+                      <p><em>Acepto los Términos y Condiciones</em></p>
+                  </div>
+                  </div>
+                </form>
 
-<script src="contacto.js"></script>
+                  <div class="contenedor-widget">
+                      <section class="widget widget_blog_subscription">
+                          <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog">
+                              <p>Subscribe newsletter.</p>
+                              <p>
+                                  <input type="text" name="email" style="width: 20%; padding: 1px 2px"
+                                      placeholder="Enter your email address" value="" id="subscribe-field">
+                              </p>
+                              <p>
+                                  <input type="submit" value="Enviar!">
+                              </p>
+                            </div>
+
+                           <!-- Mapa -->
+    <h2>Mapa</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103903.01222291228!2d-57.34264881116927!3d-35.529760477370445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9598c70de358da67%3A0x2fa3fe14b3a2a3e6!2sCentro%20Espacial%20Punta%20Indio%20-%20Sector%20L!5e0!3m2!1ses-419!2sar!4v1694466805967!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>"
+            <!--Pie de página o footer-->
+<footer class="pie">
+    <!--Inicio del footer-->
+    <!-- Enlaces a redes sociales con descripciones alt -->
+    <a href="https://www.facebook.com" target="_blank" title="Facebook">
+    <i class="fab fa-facebook" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank" title="Twitter">
+    <i class="fab fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+    <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
+    <p>&copy; 2023 Derechos Reservados</p>
+    <!--Fín  del footer-->
+    </footer>
+        </main>
+
+        <script src="contacto.js"></script>
 </body>
+
+      
 </html>
+
