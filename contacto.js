@@ -1,5 +1,12 @@
+document.getElementById('formulario').addEventListener('submit', function (event) {
+    if (!document.getElementById('terminos').checked) {
+        alert('Debes aceptar los Términos y Condiciones para enviar el formulario.');
+        event.preventDefault(); // Evita el envío del formulario
+    }
+});
+
 //*Validación de un formulario con Javascript*/
-(function () {
+/*(function () {
     //Variables
     var formulario = document.getElementsByName('formulario')[0],
         elementos = formulario.elements,
@@ -35,4 +42,4 @@
         validarCheckbox(e);
     };
     formulario.addEventListener("submit", validar);
-}()) 
+}())*/
