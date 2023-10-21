@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', 'Ubuntu', sans-serif;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+.contenedor .encabezado .marca {
+    font-size: x-large;
+    margin-right: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "encabezado encabezado encabezado"
+        "widget widget widget"
+        "contenido contenido contenido"
+        "pie pie pie";
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor>div,
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .pie {
+    padding: 10px;
+}
+
+.contenedor .encabezado {
+    background: #3f5b87;
+    grid-area: encabezado;
+    height: 45px;
+}
+
+.contenedor .contenido {
+    background: #fff;
+    grid-area: contenido;
+}
+
+.logotipo:link,
+.logotipo:visited,
+.logotipo:hover,
+.logotipo:active {
+    color: #c4d2e0;
+    text-decoration: none;
+}
+
+.items-menu {
+    margin-left: 10px;
+}
+
+.items-menu:link,
+.items-menu:visited,
+.items-menu:hover,
+.items-menu:active {
+    color: white;
+    text-decoration: none;
+}
+
+.flex-parent-element {
+    display: flex;
+    width: 100%;
+}
+
+.flex-child-element {
+    flex: 1;
+    margin: 10px;
+}
+
+.flex-child-element.primero {
+    width: 0 20%;
+}
+
+.flex-child-element.segundo {
+    color: #3f5b87;
+    width: 0 80%;
+    text-align: right;
+    
+}
+
+.contenedor .widget {
+    background: #d8c5c0;
+    color: #000;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.carrusel {
+    background: rgb(73, 23, 119);
+    color: #000;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel1 {
+    background-color: rgb(32, 32, 153);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget {
+    grid-area: widget;
+}
+
+.contenedor .pie {
+    background: #3f5b87;
+    color: #fff;
+    grid-area: pie;
+    margin-top: auto;
+    height: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas: "encabezado encabezado encabezado"
+            "widget widget widget"
+            "contenido contenido contenido"
+            "pie pie pie";
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor {
+        grid-template-areas: "encabezado encabezado encabezado"
+            "widget widget widget"
+            "contenido contenido contenido"
+            "pie pie pie";
+    }
+
+}
+
+/* Inicio de Estilos para el banner (carrusel de imágenes) */
+
+/* Estilos para el carrusel */
+/* Estilos para el carrusel */
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .banner-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none; /* Oculta todas las imágenes por defecto */
+    position: absolute;
+    transition: opacity 1s; /* Agrega una transición de desvanecimiento suave */
+}
+
+.banner .banner-img.active {
+    display: block; /* Muestra la imagen activa */
+}
