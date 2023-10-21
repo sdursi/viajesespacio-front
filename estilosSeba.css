@@ -154,7 +154,7 @@ body {
     /* auto permite centrar nuestra página en forma horizontal */
 }
 .carrusel {
-    background: green;
+    background: rgb(73, 23, 119);
     color: #000;
     height: 100px;
     /*utilizamos flexbox para alinear el contenido*/
@@ -166,8 +166,11 @@ body {
 }
 
 .carrusel1 {
-    background-color: #282e55;
-    
+    background-color: rgb(32, 32, 153);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedor .widget {
