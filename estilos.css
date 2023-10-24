@@ -8,12 +8,12 @@
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background: rgb(102, 102, 126);
     color: #000;
 }
 
 .contenedor .encabezado .marca {
-    font-size: x-large;
+    font-size:medium;
     margin-right: 8px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -36,18 +36,19 @@ body {
 .contenedor .contenido,
 .contenedor .sidebar,
 .contenedor .pie {
-    padding: 10px;
+    padding: 0px;
 }
 
 .contenedor .encabezado {
     background: #3f5b87;
     grid-area: encabezado;
-    height: 45px;
+    height: 100%;
 }
 
 .contenedor .contenido {
-    background: #fff;
+    background:  rgb(102, 102, 126);;
     grid-area: contenido;
+    padding: 2px;
 }
 
 .logotipo:link,
@@ -55,11 +56,11 @@ body {
 .logotipo:hover,
 .logotipo:active {
     color: #c4d2e0;
-    text-decoration: none;
+    text-decoration: green;
 }
 
 .items-menu {
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 .items-menu:link,
@@ -77,7 +78,7 @@ body {
 
 .flex-child-element {
     display: flex;
-    margin: 1px;
+    margin: 10px;
     color: white;
     border: black;
     font-style: normal;
@@ -87,17 +88,24 @@ body {
     
 }
 
-.flex-child-element.primero {
+/*.flex-child-element.primero {
     width: 0 20%;
     flex-grow: unset;
     color: #d8c5c0;
+    
+}*/
+.flex-child-element.primero {
+    width: 20%; /* Corregido a 20% */
+    flex-grow: 0; /* Corregido a 0 para desactivar el crecimiento */
+    color: #d8c5c0; /* Cambiado a un color válido */
 }
 
+
 .flex-child-element.segundo {
-    display: flexbox;
+    display: flex;
     color: blue;
     width: 0 80%;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     font-weight: bold;
     background-color: #d8c5c0;
@@ -122,7 +130,7 @@ body {
 .contenedor .encabezado {
     background: #4d5788;
     grid-area: encabezado;
-    height: 70px; /* Aumentamos la altura para dar más presencia al encabezado */
+    height: 80px; /* Aumentamos la altura para dar más presencia al encabezado */
     display: flex;
     justify-content: space-between; /* Alineación del contenido a los extremos */
     align-items: center; /* Centrar verticalmente el contenido */
@@ -132,14 +140,15 @@ body {
     font-size: 24px; /* Tamaño de fuente más grande */
     margin-right: 10px; /* Aumentamos el margen derecho */
     font-family: 'Ubuntu', sans-serif;
-    color: white; /* Cambiamos el color del texto a blanco */
+    color: rgb(102, 102, 126); /* Cambiamos el color del texto a blanco */
     text-decoration: wheat;
 }
 
 .contenedor .encabezado .items-menu ul {
+    background-color: rgb(102, 102, 126);;
     list-style: none;
     margin: 2px;
-    padding: 2px;
+    padding: 0px;
     display: flex;
 }
 
@@ -149,7 +158,7 @@ body {
 
 .contenedor .encabezado .items-menu ul li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(102, 102, 126);;
     font-weight: bold;
     /*Textoennegrita*/font-size: 14px;
     /*Tamañodefuenteligeramentemáspequeño*/transition: color 0.3s;
@@ -170,7 +179,7 @@ body {
 
 
 .carrusel {
-    background: rgb(73, 23, 119);
+    background: rgb(102, 102, 126);
     color: #000;
     height: 100px;
     display: flex;
@@ -179,7 +188,7 @@ body {
 }
 
 .carrusel1 {
-    background-color: rgb(32, 32, 153);
+    background-color: rgb(102, 102, 126);
     height: 100px;
     display: flex;
     align-items: center;
@@ -191,15 +200,16 @@ body {
 }
 
 .contenedor .pie {
-    background: #3f5b87;
-    color: #fff;
     grid-area: pie;
+    background: #3f5b87;
+    
+    
     margin-top: auto;
-    height: 50px;
+    height: 100%;
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-0width: 768px) {
     .contenedor {
         grid-template-areas: "encabezado encabezado encabezado"
             "widget widget widget"
@@ -234,9 +244,14 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    display: none; /* Oculta todas las imágenes por defecto */
-    position: absolute;
-    transition: opacity 1s; /* Agrega una transición de desvanecimiento suave */
+    display: none;
+    /*Ocultatodaslasimágenespordefecto*/position: absolute;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
 }
 
 .banner .banner-img.active {
@@ -247,14 +262,18 @@ body {
 .contenedor-formulario {
     max-width: 400px;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f5f5f5;
+    background-color: rgb(102, 102, 126);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .input-group {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     width: 70%
 }
 
@@ -270,7 +289,11 @@ button {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .checkbox {
