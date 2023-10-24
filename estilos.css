@@ -17,7 +17,7 @@ body {
     margin-right: 8px;
     font-family: 'Ubuntu', sans-serif;
 }
-
+/* Estilos para la versión de escritorio */
 .contenedor {
     display: grid;
     gap: 20px;
@@ -94,61 +94,84 @@ body {
     color: #d8c5c0;
     
 }*/
+
+/*cierre practicando encabezado*/
+
+/* Estilos para los elementos .flex-child-element.primero */
 .flex-child-element.primero {
-    width: 20%; /* Corregido a 20% */
-    flex-grow: 0; /* Corregido a 0 para desactivar el crecimiento */
-    color: #d8c5c0; /* Cambiado a un color válido */
+    width: 20%;
+    flex-grow: 0;
+    color: #d8c5c0;
+    padding: 20px;
+    border: 2px solid #0056b3;
+    text-align: center;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
 }
 
+.flex-child-element.primero:hover {
+    background-color: #0056b3;
+    color: #fff;
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+}
 
+/* Estilos para los elementos .flex-child-element.segundo */
 .flex-child-element.segundo {
     display: flex;
-    color: blue;
-    width: 0 80%;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    padding: 10px;
+    text-align: center;
     font-size: 30px;
     font-weight: bold;
     background-color: #d8c5c0;
+    border-radius: 100px;
+    transition: background-color 0.3s, transform 0.3s;
+    -webkit-transition: background-color 0.3s, transform 0.3s;
+    -moz-transition: background-color 0.3s, transform 0.3s;
+    -ms-transition: background-color 0.3s, transform 0.3s;
+    -o-transition: background-color 0.3s, transform 0.3s;
 }
 
-.contenedor .widget {
-    background: #d8c5c0;
-    color: #000;
-    width: 300 px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2px auto;
+.flex-child-element.segundo:hover {
+    background-color: grey;
+    color: #fff;
+    transform: scale(1.1);
 }
 
+.flex-child-element.segundo:active {
+    transform: scale(0.9);
+}
 
-
-
-/*practicando encabesado*/
 /* Estilos para el encabezado */
 .contenedor .encabezado {
     background: #4d5788;
     grid-area: encabezado;
-    height: 80px; /* Aumentamos la altura para dar más presencia al encabezado */
+    height: 80px;
     display: flex;
-    justify-content: space-between; /* Alineación del contenido a los extremos */
-    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contenedor .encabezado .marca {
-    font-size: 24px; /* Tamaño de fuente más grande */
-    margin-right: 10px; /* Aumentamos el margen derecho */
+    font-size: 24px;
+    margin-right: 10px;
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(102, 102, 126); /* Cambiamos el color del texto a blanco */
+    color: rgb(102, 102, 126);
     text-decoration: wheat;
 }
 
 .contenedor .encabezado .items-menu ul {
-    background-color: rgb(102, 102, 126);;
+    background-color: rgb(102, 102, 126);
     list-style: none;
     margin: 2px;
-    padding: 0px;
+    padding: 1px;
     display: flex;
 }
 
@@ -158,22 +181,15 @@ body {
 
 .contenedor .encabezado .items-menu ul li a {
     text-decoration: none;
-    color: rgb(102, 102, 126);;
+    color: rgb(102, 102, 126);
     font-weight: bold;
-    /*Textoennegrita*/font-size: 14px;
-    /*Tamañodefuenteligeramentemáspequeño*/transition: color 0.3s;
-     /* Efecto de transición al pasar el ratón */
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    -ms-transition: color 0.3s;
-    -o-transition: color 0.3s;
+    font-size: 14px;
+    transition: color 0.3s;
 }
 
 .contenedor .encabezado .items-menu ul li a:hover {
-    color: #c4d2e0; /* Cambio de color al pasar el ratón */
+    color: #c4d2e0;
 }
-/*cierre practicando encabezado*/
-
 
 
 
@@ -209,29 +225,35 @@ body {
     width: 100%;
 }
 
-@media screen and (max-0width: 768px) {
+/* Estilos para la versión de tablet */
+@media screen and (max-width: 768px) {
     .contenedor {
         grid-template-areas: "encabezado encabezado encabezado"
             "widget widget widget"
             "contenido contenido contenido"
             "pie pie pie";
+        background-color: blue; /* Cambia el color de fondo para la versión de tablet */
+        color: #555; /* Cambia el color del texto para la versión de tablet */
     }
 }
 
+/* Estilos para la versión móvil */
 @media screen and (max-width: 450px) {
     .contenedor {
         grid-template-areas: "encabezado encabezado encabezado"
             "widget widget widget"
             "contenido contenido contenido"
             "pie pie pie";
+        background-color: red; /* Cambia el color de fondo para la versión móvil */
+        color: yellowgreen; /* Cambia el color del texto para la versión móvil */
     }
-
 }
 
-/* Inicio de Estilos para el banner (carrusel de imágenes) */
+
+
 
 /* Estilos para el carrusel */
-/* Estilos para el carrusel */
+
 .banner {
     width: 100%;
     height: 300px;
@@ -308,5 +330,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: blueviolet;
 }
