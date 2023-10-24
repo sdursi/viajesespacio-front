@@ -67,7 +67,9 @@ body {
 
 .card {
     flex: 1;
-    /*Permitequelastarjetasseexpandanparaocupartodoelanchodisponible*/border: 1px solid #ccc;
+    /*Permitequelastarjetasseexpandanparaocupartodoelanchodisponible*/
+    background-color: blanchedalmond;
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -94,6 +96,28 @@ body {
 
 .btn-primary:hover {
     background-color: #26406c;
+}
+.btn-primary {
+    background-color: #3f5b87;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Agregamos una transición para suavizar el cambio de color */
+}
+
+.btn-primary:hover {
+    background-color: #26406c;
+    
+}
+
+/* Agregamos un estilo adicional para cuando se hace clic en el botón */
+.btn-primary:active {
+    background-color: #3f5b87; /* El color vuelve al original cuando se hace clic */
+    color: white; /* El texto sigue siendo blanco */
+    transform: scale(1.1); /* Hace que el botón se agrande ligeramente al hacer clic */
 }
 
 
@@ -139,7 +163,7 @@ body {
 .flex-child-element.primero {
     width: 20%;
     flex-grow: 0;
-    color: #d8c5c0;
+    color: rgb(168, 133, 168);
     padding: 20px;
     border: 2px solid #0056b3;
     text-align: center;
@@ -172,7 +196,7 @@ body {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    background-color: #d8c5c0;
+    background-color: black;
     border-radius: 100px;
     transition: background-color 0.3s, transform 0.3s;
     -webkit-transition: background-color 0.3s, transform 0.3s;
@@ -455,6 +479,8 @@ button:hover {
 
 .btn-primary:hover {
     background-color: #26406c;
+    color: #fff;
+  
 }
 /* Estilos para la sección de widgets (las tarjetas) */
 .widget {
@@ -561,4 +587,31 @@ button:hover {
 
 .btn-primary:hover {
     background-color: #26406c;
+}
+.pie {
+    background-color: #3f5b87;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: content;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer-social a:hover {
+    color: #c4d2e0;
+}
+
+.footer-text {
+    font-size: 14px;
 }

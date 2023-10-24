@@ -30,43 +30,16 @@
             </div>
      
         </header>
-    </div>
+ 
         <main class="contenido">
 
             <div class="banner">
                 <div class="banner-img" style="background-image: url('./Images/estacion-espacial.jpg');"></div>
-                <div class="banner-img" style="background-image: url('./images/astronauta.jpg');"></div>
+                <div class="banner-img" style="background-image: url('./images/banner4.webp');"></div>
                 <div class="banner-img" style="background-image: url('./images/viajosi.jpg');"></div>
             </div>
-
-            <select name=interes>
-                <option value="Elegir">Idioma
-                <option value="Comercial">Ingles
-                <option value="Clientes">Frances
-                <option value="Proveedores">Portugues
-                <option value="Proveedores">Italiano
-            </select>
-
-            <div class="contenedor-ventas">
-                <div><h2>Viajes a la Luna</h2>
-                    <img src="Images/enLaLuna.jpg" width="300" heigth="100">
-                    <button class="btn_ventas"><p>Añadir al carrito</p></button>
-                </div>
-                <div><h2>Viajes a Marte</h2>
-                    <img src="Images/613435-44543-marte (1).jpg" width="300" heigth="150">
-                    <button class="btn_ventas"><p>Añadir al carrito</p></button>
-                </div>
-                <div><h2>Viajes a Júpiter</h2>
-                    <img src="Images/jupiter-junto-a-una-de-sus-lunas-europa_31a20798_1280x1058.jpg" width="200" heigth="150">
-                    <button class="btn_ventas"><p>Añadir al carrito</p></button>
-                </div>
-                <div><h2>Viajes a Saturno</h2>
-                    <img src="Images/saturno.jpg" width="300" heigth="200">
-                    <button class="btn_ventas"><p>Añadir al carrito</p></button>
-                </div>
             <div class="carrusel">
-               
-                </div>
+                <h1>Viajes al espacio</h1>
             
             
                 <form action="submit"></form>
@@ -77,6 +50,16 @@
                
      
                 <form action="submit">
+                    <div class="cajas">
+                        <div><p>Comprar un viaje al espacio es una experiencia emocionante y única.</p></div>
+                        <div>Entrenamiento: Completa el entrenamiento proporcionado por la agencia espacial o la empresa de viajes espaciales.</div>
+                        <div>Esto incluye preparación física, entrenamiento en simuladores y sesiones de capacitación técnica.</div>
+                        <div>Asegúrese de estar en buena forma física antes de comenzar el entrenamiento.</div>
+                     </div>
+            </div>
+<script src="experiencias.js"></script>
+            <div>
+            
 
                     <div class="cajas">
                         <p>Comprar un viaje al espacio es una experiencia emocionante y única.
@@ -86,7 +69,14 @@
                      </div>
                      <a href="https://lunarembassy.com/product/chandrayaan-3-landing-site-view-property-moon/">Quieres adelantarte e ir comprando tu terrenos?. Te dejamos el link de nuestros amigos Lunar Embassy</a>
             </div>
-            <h2><em>Te dejamos la foto del día,de nuestros amigos de la NASA.</em></h2>
+            
+            <!--barra-busqueda-->
+                <form class="formulario">
+                    <input type="text" class="barra-busqueda">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+
             <!--API-->
             <div id="apod">
                 <img id="apodImage" src="" alt="APOD" width="400" height= "400">
@@ -94,8 +84,7 @@
         <p id="apodTitle"></p>
                 <p id="apodExplanation"></p>
             </div>
-        </main>
-   
+           
             <!--Pie de página o footer-->
 <footer class="pie">
     <!--Inicio del footer-->
@@ -112,11 +101,13 @@
     <p>&copy; 2023 Derechos Reservados</p>
     <!--Fín  del footer-->
     </footer>
+
+        </main>
+    
 </body>
  
 <script src="indexhtml.js"></script>
 
 
 </html>
-
 
