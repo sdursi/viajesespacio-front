@@ -8,16 +8,22 @@
 }
 
 body {
-    background: rgb(102, 102, 126);
+    background: rgb(43, 43, 68);
     color: #000;
 }
 
 .contenedor .encabezado .marca {
     font-size:medium;
     margin-right: 8px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Didact Gothic', 'Ubuntu', sans-serif;
 }
 /* Estilos para la versión de escritorio */
+
+.contenedor .encabezado {
+    background: rgb(44, 44, 63);
+    grid-area: encabezado;
+    height: 100%;
+}
 .contenedor {
     display: grid;
     gap: 20px;
@@ -27,8 +33,8 @@ body {
         "widget widget widget"
         "contenido contenido contenido"
         "pie pie pie";
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .contenedor>div,
@@ -46,10 +52,48 @@ body {
 }
 
 .contenedor .contenido {
-    background:  rgb(102, 102, 126);;
+    background: #3f5b87; 
     grid-area: contenido;
     padding: 2px;
 }
+.main.contenido {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior */
+}
+
+.card {
+    flex: 1;
+    /*Permitequelastarjetasseexpandanparaocupartodoelanchodisponible*/border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: calc(33.33% - 20px);
+     /* Asegura que haya espacio entre las tarjetas */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+
+
+.btn-primary {
+    background-color: #3f5b87;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #26406c;
+}
+
 
 .logotipo:link,
 .logotipo:visited,
@@ -88,14 +132,6 @@ body {
     
 }
 
-/*.flex-child-element.primero {
-    width: 0 20%;
-    flex-grow: unset;
-    color: #d8c5c0;
-    
-}*/
-
-/*cierre practicando encabezado*/
 
 /* Estilos para los elementos .flex-child-element.primero */
 .flex-child-element.primero {
@@ -111,6 +147,10 @@ body {
     -moz-transition: background-color 0.3s;
     -ms-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
+    -webkit-border-radius:10;
+    -moz-border-radius:10;
+    -ms-border-radius:10;
+    -o-border-radius:10;
 }
 
 .flex-child-element.primero:hover {
@@ -137,16 +177,28 @@ body {
     -moz-transition: background-color 0.3s, transform 0.3s;
     -ms-transition: background-color 0.3s, transform 0.3s;
     -o-transition: background-color 0.3s, transform 0.3s;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 .flex-child-element.segundo:hover {
     background-color: grey;
     color: #fff;
     transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .flex-child-element.segundo:active {
     transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 
 /* Estilos para el encabezado */
@@ -162,7 +214,7 @@ body {
 .contenedor .encabezado .marca {
     font-size: 24px;
     margin-right: 10px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Didact Gothic', 'Ubuntu', sans-serif;
     color: rgb(102, 102, 126);
     text-decoration: wheat;
 }
@@ -181,10 +233,14 @@ body {
 
 .contenedor .encabezado .items-menu ul li a {
     text-decoration: none;
-    color: rgb(102, 102, 126);
+    color: rgb(19, 19, 39);
     font-weight: bold;
     font-size: 14px;
     transition: color 0.3s;
+    -webkit-transition:2;
+    -moz-transition:2;
+    -ms-transition:2;
+    -o-transition:2;
 }
 
 .contenedor .encabezado .items-menu ul li a:hover {
@@ -195,7 +251,7 @@ body {
 
 
 .carrusel {
-    background: rgb(102, 102, 126);
+    background: rgb(44, 44, 63);
     color: #000;
     height: 100px;
     display: flex;
@@ -204,7 +260,7 @@ body {
 }
 
 .carrusel1 {
-    background-color: rgb(102, 102, 126);
+    background: rgb(44, 44, 63);
     height: 100px;
     display: flex;
     align-items: center;
@@ -213,11 +269,12 @@ body {
 
 .contenedor .widget {
     grid-area: widget;
+    
 }
 
 .contenedor .pie {
     grid-area: pie;
-    background: #3f5b87;
+    background: #172641;
     
     
     margin-top: auto;
@@ -232,6 +289,7 @@ body {
             "widget widget widget"
             "contenido contenido contenido"
             "pie pie pie";
+            max-width: 100%;
         background-color: blue; /* Cambia el color de fondo para la versión de tablet */
         color: #555; /* Cambia el color del texto para la versión de tablet */
     }
@@ -240,10 +298,11 @@ body {
 /* Estilos para la versión móvil */
 @media screen and (max-width: 450px) {
     .contenedor {
-        grid-template-areas: "encabezado encabezado encabezado"
-            "widget widget widget"
-            "contenido contenido contenido"
-            "pie pie pie";
+        grid-template-areas: "encabezado"
+            "widget widget"
+            "contenido"
+            "pie";
+            min-width: 100%;
         background-color: red; /* Cambia el color de fondo para la versión móvil */
         color: yellowgreen; /* Cambia el color del texto para la versión móvil */
     }
@@ -256,7 +315,7 @@ body {
 
 .banner {
     width: 100%;
-    height: 300px;
+    height: 800px;
     overflow: hidden;
     position: relative;
 }
@@ -331,4 +390,162 @@ button {
 
 button:hover {
     background-color: blueviolet;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card-header {
+    background-color: #3f5b87;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #3f5b87;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Didact Gothic', 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #26406c;
+}
+/* Estilos para la sección de widgets (las tarjetas) */
+.widget {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
+}
+
+.card {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: calc(33.33% - 20px);
+     /* Asegura que haya espacio entre las tarjetas */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card-header {
+    background-color: #3f5b87;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #3f5b87;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #26406c;
+}
+/* Estilos para la sección de widgets (las tarjetas) */
+.widget {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
+}
+
+
+
+.card-header {
+    background-color: #3f5b87;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #3f5b87;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #26406c;
 }
