@@ -10,6 +10,8 @@
 body {
     background: rgb(43, 43, 68);
     color: #000;
+    position: relative; /*necesario para solucionar lo del footer,en parte*/
+    padding-bottom: 3em;
 }
 
 .contenedor .encabezado .marca {
@@ -247,8 +249,16 @@ body {
     color: #c4d2e0;
 }
 
-
-
+.contenedor-ventas{
+    background-color: #ccc;
+    display: flex;
+}
+.formulario_busqueda{
+    width: 90%;
+    border-radius: 5px;
+  
+ 
+}
 
 .carrusel {
     background: rgb(44, 44, 63);
@@ -277,9 +287,12 @@ body {
     background: #172641;
     
     
+    background: white;
     margin-top: auto;
     height: 100%;
     width: 100%;
+    position: relative;
+    padding: 1em;
 }
 
 /* Estilos para la versión de tablet */
@@ -346,7 +359,7 @@ body {
     padding: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgb(102, 102, 126);
+    background-color: rgb(158, 147, 158);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;

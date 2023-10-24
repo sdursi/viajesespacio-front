@@ -1,4 +1,4 @@
-//   // Función para obtener la imagen astronómica del día
+  // Función para obtener la imagen astronómica del día
 
 
 // Función para obtener la imagen astronómica del día
