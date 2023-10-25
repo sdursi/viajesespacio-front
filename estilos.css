@@ -658,3 +658,109 @@ button:hover {
 .footer-text {
     font-size: 14px;
 }
+
+.contenido1 {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las tarjetas */
+.card2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Estilos para el formulario */
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el mapa */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Estilos para el carrusel y el widget */
+.carrusel2, .widget2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.widget2 img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Estilos para el ícono */
+i {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.color1 {color: #071106;}
+.color2 {color: #284138;} 
+.color3 {color: #d1abd3;}
+.color4 {color: #d8c5c0;}  
+.color5 {color: #e0e0c8;} 
