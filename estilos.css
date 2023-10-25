@@ -439,6 +439,21 @@ button:hover {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.card1 {
+    background-color: rgb(102, 102, 126);
+    display: flex;
+    justify-content:center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
 
 .card-header {
     background-color: #3f5b87;
@@ -448,8 +463,23 @@ button:hover {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.card-header1 {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
 .card-body {
+    background-color: #172641;
+    padding: 10px;
+}
+.card-body1 {
+    background-color: rgb(102, 102, 126);
     padding: 10px;
 }
 
@@ -482,9 +512,22 @@ button:hover {
     color: #fff;
   
 }
+
+/* Estilo personalizado para que la tarjeta ocupe todo el ancho de la pantalla */
+.widget .card {
+    width: 100%;
+}
+
+
 /* Estilos para la sección de widgets (las tarjetas) */
 .widget {
     display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
+}
+.widget1 {
+    
+    display: inline-flex;
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
     justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
 }
