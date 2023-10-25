@@ -662,14 +662,14 @@ button:hover {
 .contenido1 {
     width: 80%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgb(44, 44, 63); ;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para las tarjetas */
 .card2 {
-    background-color: #fff;
+    background-color: rgb(56, 56, 85);
     border: 1px solid #ccc;
     padding: 20px;
     margin: 20px 0;
@@ -677,6 +677,7 @@ button:hover {
 }
 
 h1 {
+    background-color: #172641;
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 10px;
@@ -713,6 +714,10 @@ input[type="email"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    -webkit-border-radius:2;
+    -moz-border-radius:2;
+    -ms-border-radius:2;
+    -o-border-radius:2;
 }
 
 .checkbox {
@@ -720,13 +725,17 @@ input[type="email"] {
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: rgb(44, 44, 63);
+    
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 button:hover {
@@ -742,8 +751,8 @@ iframe {
 
 /* Estilos para el carrusel y el widget */
 .carrusel2, .widget2 {
-    background-color: #007bff;
-    color: #fff;
+    background-color: rgb(44, 44, 63);;
+    
     padding: 20px;
     margin: 10px 0;
 }
