@@ -19,7 +19,7 @@ body {
     margin-right: 8px;
     font-family: 'Didact Gothic', 'Ubuntu', sans-serif;
 }
-/* Estilos para la versión de escritorio */
+/* Estilos para la versiÃ³n de escritorio */
 
 .contenedor .encabezado {
     background: rgb(44, 44, 63);
@@ -60,7 +60,7 @@ body {
 }
 .main.contenido {
     display: flex;
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva lÃ­nea si no caben en el ancho de la pÃ¡gina */
     justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
     align-items: flex-start; /* Alinea las tarjetas en la parte superior */
 }
@@ -105,7 +105,7 @@ body {
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
-    transition: background-color 0.3s; /* Agregamos una transición para suavizar el cambio de color */
+    transition: background-color 0.3s; /* Agregamos una transiciÃ³n para suavizar el cambio de color */
 }
 
 .btn-primary:hover {
@@ -113,11 +113,11 @@ body {
     
 }
 
-/* Agregamos un estilo adicional para cuando se hace clic en el botón */
+/* Agregamos un estilo adicional para cuando se hace clic en el botÃ³n */
 .btn-primary:active {
     background-color: #3f5b87; /* El color vuelve al original cuando se hace clic */
     color: white; /* El texto sigue siendo blanco */
-    transform: scale(1.1); /* Hace que el botón se agrande ligeramente al hacer clic */
+    transform: scale(1.1); /* Hace que el botÃ³n se agrande ligeramente al hacer clic */
 }
 
 
@@ -319,31 +319,67 @@ body {
     padding: 1em;
 }
 
+/* Estilos para la version de tablet */
 /* Estilos para la versión de tablet */
 @media screen and (max-width: 768px) {
     .contenedor {
-        grid-template-areas: "encabezado encabezado encabezado"
-            "widget widget widget"
-            "contenido contenido contenido"
-            "pie pie pie";
-            max-width: 100%;
+        grid-template-areas:
+            "encabezado"
+            "widget"
+            "contenido"
+            "pie";
+        max-width: 100%;
         background-color: blue; /* Cambia el color de fondo para la versión de tablet */
         color: #555; /* Cambia el color del texto para la versión de tablet */
     }
+
+    /* Ajustes para los elementos en la versión de tablet */
+    .contenedor .encabezado .marca {
+        font-size: 20px;
+    }
+
+    .contenedor .encabezado .items-menu ul {
+        display: none; /* Oculta el menú en la versión de tablet */
+    }
+
+    .widget .card {
+        width: 100%; /* Las tarjetas ocupan todo el ancho en la versión de tablet */
+    }
 }
 
+
+/* Estilos para la versiÃ³n mÃ³vil */
 /* Estilos para la versión móvil */
 @media screen and (max-width: 450px) {
     .contenedor {
-        grid-template-areas: "encabezado encabezado encabezado"
-            "widget widget widget"
-            "contenido contenido contenido"
-            "pie pie pie";
-            min-width: 100%;
+        grid-template-areas:
+            "encabezado"
+            "widget"
+            "contenido"
+            "pie";
+        min-width: 100%;
         background-color: red; /* Cambia el color de fondo para la versión móvil */
         color: yellowgreen; /* Cambia el color del texto para la versión móvil */
     }
+
+    /* Ajustes para los elementos en la versión móvil */
+    .contenedor .encabezado .marca {
+        font-size: 18px;
+    }
+
+    .contenedor .encabezado .items-menu ul {
+        display: none; /* Oculta el menú en la versión móvil */
+    }
+
+    .widget .card {
+        width: 100%; /* Las tarjetas ocupan todo el ancho en la versión móvil */
+    }
+
+    .contenedor-formulario {
+        max-width: 100%; /* Formulario ocupa todo el ancho en la versión móvil */
+    }
 }
+
 
 
 
@@ -363,7 +399,7 @@ body {
     background-size: cover;
     background-position: center;
     display: none;
-    /*Ocultatodaslasimágenespordefecto*/position: absolute;
+    /*OcultatodaslasimÃ¡genespordefecto*/position: absolute;
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
     -moz-transition: opacity 2s;
@@ -376,7 +412,7 @@ body {
     display: block; /* Muestra la imagen activa */
 }
 
-/* inicio Códigos formulario */
+/* inicio CÃ³digos formulario */
 .contenedor-formulario {
     max-width: 400px;
     margin: auto;
@@ -418,7 +454,7 @@ button {
     margin-right: 5px;
 }
 
-/* Estilos para el botón de enviar */
+/* Estilos para el botÃ³n de enviar */
 button {
     background-color: #282e55;
     color: #fff;
@@ -518,16 +554,16 @@ button:hover {
 }
 
 
-/* Estilos para la sección de widgets (las tarjetas) */
+/* Estilos para la secciÃ³n de widgets (las tarjetas) */
 .widget {
     display: flex;
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva lÃ­nea si no caben en el ancho de la pÃ¡gina */
     justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
 }
 .widget1 {
     
     display: inline-flex;
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva lÃ­nea si no caben en el ancho de la pÃ¡gina */
     justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
 }
 
@@ -581,10 +617,10 @@ button:hover {
 .btn-primary:hover {
     background-color: #26406c;
 }
-/* Estilos para la sección de widgets (las tarjetas) */
+/* Estilos para la secciÃ³n de widgets (las tarjetas) */
 .widget {
     display: flex;
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva línea si no caben en el ancho de la página */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a una nueva lÃ­nea si no caben en el ancho de la pÃ¡gina */
     justify-content: space-between; /* Distribuye las tarjetas de manera uniforme */
 }
 
@@ -761,7 +797,7 @@ iframe {
     margin-left: 10px;
 }
 
-/* Estilos para el ícono */
+/* Estilos para el Ã­cono */
 i {
     font-size: 24px;
     vertical-align: middle;
