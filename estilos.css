@@ -320,7 +320,7 @@ body {
 }
 
 /* Estilos para la version de tablet */
-/* Estilos para la versión de tablet */
+
 @media screen and (max-width: 768px) {
     .contenedor {
         grid-template-areas:
@@ -329,6 +329,7 @@ body {
             "contenido"
             "pie";
         max-width: 100%;
+        font-size: 14px;
         background-color: blue; /* Cambia el color de fondo para la versión de tablet */
         color: #555; /* Cambia el color del texto para la versión de tablet */
     }
@@ -358,6 +359,7 @@ body {
             "contenido"
             "pie";
         min-width: 100%;
+        font-size: 12px;
         background-color: red; /* Cambia el color de fondo para la versión móvil */
         color: yellowgreen; /* Cambia el color del texto para la versión móvil */
     }
@@ -934,7 +936,7 @@ i {
     -o-border-radius: 50px;
 }
 h3 {
-    background-color: salmon;
+    background-color: blueviolet;
     display: flex;
         font-size: 50px;
         justify-content: flex-end;
