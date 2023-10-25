@@ -335,10 +335,10 @@ body {
 /* Estilos para la versión móvil */
 @media screen and (max-width: 450px) {
     .contenedor {
-        grid-template-areas: "encabezado"
-            "widget widget"
-            "contenido"
-            "pie";
+        grid-template-areas: "encabezado encabezado encabezado"
+            "widget widget widget"
+            "contenido contenido contenido"
+            "pie pie pie";
             min-width: 100%;
         background-color: red; /* Cambia el color de fondo para la versión móvil */
         color: yellowgreen; /* Cambia el color del texto para la versión móvil */
@@ -434,10 +434,10 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius:2;
+    -moz-border-radius:2;
+    -ms-border-radius:2;
+    -o-border-radius:2;
 }
 .card1 {
     background-color: rgb(102, 102, 126);
@@ -448,11 +448,10 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin: 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-
+    -webkit-border-radius:2;
+    -moz-border-radius:2;
+    -ms-border-radius:2;
+    -o-border-radius:2;
 }
 
 .card-header {
@@ -501,10 +500,10 @@ button:hover {
     border-radius: 5px;
     display: inline-block;
     margin-top: 15px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius:2;
+    -moz-border-radius:2;
+    -ms-border-radius:2;
+    -o-border-radius:2;
 }
 
 .btn-primary:hover {
